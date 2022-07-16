@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Moderateviolet: hsl(263, 55%, 52%);
+  --Verydarkgrayishblue: hsl(217, 19%, 35%);
+  --Verydarkblackishblue: hsl(219, 29%, 14%);
+  --blackopp: hsla(219,29%,14%,50%);
+  --White: hsl(0, 0%, 100%);
+  --WhiteOpp: hsla(0, 0%, 100%, 50%);
+  --Lightgray: hsl(0, 0%, 81%);
+  --Lightgrayishblue: hsl(210, 46%, 95%);
+}
+body {
+  background-color: var(--Lightgrayishblue);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+}
+.flex-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 280px 280px 280px 280px;
+  grid-template-rows: 270px 270px;
+  height: 600px;
+  width: 1220px;
+  gap: 20px;
+  padding: 20px;
+}
+.grid-container > div {
+  border-radius: 7px;
+  padding: 30px;
+}
+.first {
+  grid-column: 1 / span 2;
+  background-color: var(--Moderateviolet);
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 380px 0;
+}
+.second {
+  grid-column: 3 / span 1;
+  background-color: var(--Verydarkgrayishblue);
+}
+.third {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 2;
+  background-color: var(--White);
+}
+.fourth {
+  grid-column: 1 / span 1;
+  background-color: var(--White);
+}
+.fifth {
+  grid-column: 2 / span 2;
+  background-color: var(--Verydarkblackishblue);
+}
+.avatar {
+  height: 30px;
+  width: 30px;
+  background-image: url(images/image-daniel.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid var(--Lightgray);
+}
+.componet-wrap {
+  display: flex;
+}
+.first-name {
+  margin-left: 15px;
+  color: var(--White);
+  font-weight: 600;
+}
+.first-name > p {
+  color: var(--WhiteOpp);
+}
+.details {
+  margin-top: 20px;
+  font-size: 22px;
+  color: var(--White);
+}
+.details1 {
+  margin-top: 10px;
+  color: var(--WhiteOpp);
+  font-size: 13px;
+}
+
+.componet-wrap-2 {
+  display: flex;
+}
+.second-name {
+  margin-left: 15px;
+  color: var(--White);
+  font-weight: 600;
+}
+.second-name > p {
+  color: var(--WhiteOpp);
+}
+.avatar-2 {
+  height: 30px;
+  width: 30px;
+  background-image: url(images/image-jonathan.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid var(--Lightgray);
+}
+.componet-wrap-3 {
+  display: flex;
+}
+.third-name {
+  margin-left: 15px;
+  color: var(--Verydarkblackishblue);
+  font-weight: 600;
+}
+.third-name > p {
+  color: var(--blackopp);
+}
+.avatar-3 {
+  height: 30px;
+  width: 30px;
+  background-image: url(images/image-kira.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid var(--Lightgray);
+}
+.details-black {
+  margin-top: 20px;
+  font-size: 22px;
+  color: var(--Verydarkblackishblue);
+}
+.details1-black {
+  margin-top: 10px;
+  color: var(--blackopp);
+  font-size: 13px;
+}
+.componet-wrap-4 {
+  display: flex;
+}
+.fourth-name {
+  margin-left: 15px;
+  color: var(--Verydarkblackishblue);
+  font-weight: 600;
+}
+.fourth-name > p {
+  color: var(--blackopp);
+}
+.avatar-4 {
+  height: 30px;
+  width: 30px;
+  background-image: url(images/image-jeanette.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid var(--Lightgray);
+}
+.componet-wrap-5 {
+  display: flex;
+}
+.fifth-name {
+  margin-left: 15px;
+  color: var(--White);
+  font-weight: 600;
+}
+.fifth-name > p {
+  color: var(--WhiteOpp);
+}
+.avatar-5 {
+  height: 30px;
+  width: 30px;
+  background-image: url(images/image-patrick.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid var(--Moderateviolet);
+}
